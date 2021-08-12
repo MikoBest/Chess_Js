@@ -6,9 +6,13 @@ const ctx = canvas.getContext('2d');
 
 //This lines creates a center element and drawes the canvas
 //İn it
+
+
 const center = document.createElement('center');
 body.append(center)
 center.append(canvas)
+
+
 
 //This object defines the board object and
 //stores it's width height and row, column count.
@@ -28,6 +32,7 @@ let Squares = new Array(0)
 //the desired amoumt
 canvas.width = board.width;
 canvas.height = board.height;
+
 
 //Changes The Color of the canvas
 canvas.style = 'background-color: rgb(255,225,225)'
@@ -75,8 +80,9 @@ for (var v = 0; v < board.column; v++) { // Every column it draws it draws 8 row
     const square = {}
       square.x = squareX
       square.y = squareY
-      square.id = Squares.length
+      square.id = Squares.length + 1
       square.isWhite = isWhite 
+      square.UnitAtTop = false
       Squares.push(square)
       
     
