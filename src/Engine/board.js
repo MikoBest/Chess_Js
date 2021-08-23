@@ -38,17 +38,17 @@ class Board{
     this.rowCount = 8
     this.columnCount = 8
     
-    this.board = document.createElement('canvas');
-    this.board.width = 240;
-    this.board.height = 240;
-    this.ctx = this.board.getContext('2d');
+    this.canvas = document.createElement('canvas');
+    this.canvas.width = 240;
+    this.canvas.height = 240;
+    this.ctx = this.canvas.getContext('2d');
   }
   create(){
     this.drawBoard();
     
     this.center = document.createElement('center')
     document.body.append(this.center)
-    this.center.append(this.board)
+    this.center.append(this.canvas)
   }
   drawBoard(){
     let isWhite = true

@@ -1,4 +1,3 @@
 const gameBoard = new Board()
-gameBoard.create();
-
-console.log(gameBoard.Squares)
+const game = new Game('white',gameBoard)
+game.start()
