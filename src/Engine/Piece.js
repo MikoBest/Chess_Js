@@ -14,6 +14,7 @@ const PieceCodes = {
 
 class Pawn{
   constructor(color){
+  this.name = PieceCodes.pawn
   if (color == 'white'){
     this.imgSrc = '/assets/w_pawn.svg'
   }
@@ -22,11 +23,13 @@ class Pawn{
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
+  this.color = color
  }
 }
 
 class Knight{
   constructor(color){
+  this.name = PieceCodes.knight
   if (color == 'white'){
     this.imgSrc = '/assets/w_knight.svg'
   }
@@ -35,11 +38,13 @@ class Knight{
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
+  this.color = color
  }
 }
 
 class Bishop{
   constructor(color){
+  this.name = PieceCodes.bishop
   if (color == 'white'){
     this.imgSrc = '/assets/w_bishop.svg'
   }
@@ -48,11 +53,13 @@ class Bishop{
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
+  this.color = color
  }
 }
 
 class Rook{
   constructor(color){
+  this.name = PieceCodes.rook
   if (color == 'white'){
     this.imgSrc = '/assets/w_rook.svg'
   }
@@ -61,11 +68,13 @@ class Rook{
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
+  this.color = color
  }
 }
 
 class Queen{
   constructor(color){
+  this.name = PieceCodes.queen
   if (color == 'white'){
     this.imgSrc = '/assets/w_queen.svg'
   }
@@ -74,11 +83,13 @@ class Queen{
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
+  this.color = color
  }
 }
 
 class King{
   constructor(color){
+  this.name = PieceCodes.king
   if (color == 'white'){
     this.imgSrc = '/assets/w_king.svg'
   }
@@ -87,5 +98,6 @@ class King{
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
+  this.color = color
  }
 }

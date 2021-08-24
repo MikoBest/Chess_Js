@@ -3,5 +3,7 @@ const game = new Game('white',gameBoard)
  game.start()
  
  window.onload = function(){
-   game.decodeFen('ppppp')
+  game.decodeFen(game.startFen)
+  console.log(gameBoard.Squares)
  }
+ 
