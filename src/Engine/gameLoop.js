@@ -1,5 +1,5 @@
 const gameBoard = new Board()
-const game = new Game('white',gameBoard)
+const game = new Game('black',gameBoard)
  game.start()
  
  window.onload = function(){

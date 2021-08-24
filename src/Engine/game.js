@@ -7,7 +7,12 @@ class Game{
   constructor(playerColor,Board){
     this.color = playerColor
     this.Board = Board
+    if (playerColor == 'white'){
     this.startFen = 'RNBQKBNR/PPPPPPPP/8/8/8/8/pppppppp/rnbqkbnr'
+    }
+    else if (playerColor == 'black') {
+    this.startFen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR'
+   }
   }
   start(){
     this.Board.create();
