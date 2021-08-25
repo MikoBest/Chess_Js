@@ -50,59 +50,60 @@ class Game{
    let char = fen.split('')
    var pos = 0
    for (var i = 0; i < char.length; i++) {
-    if (isDigit(char[i])) {
-      pos += parseInt(char[i])
-    }
-    if (char[i] == '/'){
-     
-    } 
-    if (char[i] == Pawn){
+   if (isDigit(char[i])) {
+     pos += parseInt(char[i])
+   }
+   switch(char[i]){
+    case '/':
+      break;
+   case Pawn:
      drawUnit(this.PieceTypes.wPawn,pos,this.Board)
      pos += 1
-   }
-   else if(char[i] == Pawn.toUpperCase()){
+     break;
+   case Pawn.toUpperCase():
      drawUnit(this.PieceTypes.bPawn,pos,this.Board)
      pos += 1
-   }
-   if (char[i] == Knight){
+     break;
+   case Knight:
      drawUnit(this.PieceTypes.wKnight,pos,this.Board)
      pos += 1
-   }
-   else if(char[i] == Knight.toUpperCase()){
+     break;   
+   case Knight.toUpperCase():
      drawUnit(this.PieceTypes.bKnight,pos,this.Board)
      pos += 1
-   }
-   if (char[i] == Bishop){
+      break;  
+   case Bishop:
      drawUnit(this.PieceTypes.wBishop,pos,this.Board)
      pos += 1
-   }
-   else if(char[i] == Bishop.toUpperCase()){
+     break;   
+   case Bishop.toUpperCase():
      drawUnit(this.PieceTypes.bBishop,pos,this.Board)
      pos += 1
-   }
-   if (char[i] == Rook) {
+     break;   
+   case Rook:
      drawUnit(this.PieceTypes.wRook,pos, this.Board)
      pos += 1
-   }
-   else if (char[i] == Rook.toUpperCase()) {
+     break;   
+   case Rook.toUpperCase():
      drawUnit(this.PieceTypes.bRook,pos, this.Board)
      pos += 1
-   }
-   if (char[i] == Queen) {
+     break;   
+   case Queen:
      drawUnit(this.PieceTypes.wQueen,pos, this.Board)
      pos += 1
-   }
-   else if (char[i] == Queen.toUpperCase()) {
+     break;
+   case Queen.toUpperCase():
      drawUnit(this.PieceTypes.bQueen,pos, this.Board)
      pos += 1
-   }
-   if (char[i] == King) {
+     break;
+   case King:
      drawUnit(this.PieceTypes.wKing,pos, this.Board)
      pos += 1
-   }
-   else if (char[i] == King.toUpperCase()) {
+     break;
+   case King.toUpperCase():
      drawUnit(this.PieceTypes.bKing,pos, this.Board)
      pos += 1
+     break;
    }
   }
  }

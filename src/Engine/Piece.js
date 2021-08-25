@@ -1,14 +1,14 @@
 const PieceCodes = {
   empty: 'empty',
-  white: 'white',
-  black: 'black',
+  white: 'w',
+  black: 'b',
   
-  pawn:'pawn',
-  knight: 'knight',
-  rook: 'rook',
-  bishop: 'bishop',
-  queen: 'queen',
-  king: 'king'
+  pawn:'Pawn',
+  knight: 'Knight',
+  rook: 'Rook',
+  bishop: 'Bishop',
+  queen: 'Queen',
+  king: 'King'
 }
 
 
@@ -17,28 +17,30 @@ class Pawn{
   this.name = PieceCodes.pawn
   if (color == 'white'){
     this.imgSrc = '/assets/w_pawn.svg'
+    this.color = PieceCodes.white
   }
   else if (color == 'black'){
     this.imgSrc = '/assets/b_pawn.svg'
+    this.color = PieceCodes.black
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
-  this.color = color
  }
 }
 
 class Knight{
   constructor(color){
   this.name = PieceCodes.knight
-  if (color == 'white'){
+  if (color == 'white' || color == 'White'){
     this.imgSrc = '/assets/w_knight.svg'
+    this.color = PieceCodes.white
   }
   else if (color == 'black'){
     this.imgSrc = '/assets/b_knight.svg'
+    this.color = PieceCodes.black
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
-  this.color = color
  }
 }
 
@@ -47,13 +49,14 @@ class Bishop{
   this.name = PieceCodes.bishop
   if (color == 'white'){
     this.imgSrc = '/assets/w_bishop.svg'
+    this.color = PieceCodes.white
   }
   else if (color == 'black'){
     this.imgSrc = '/assets/b_bishop.svg'
+    this.color = PieceCodes.black
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
-  this.color = color
  }
 }
 
@@ -62,13 +65,14 @@ class Rook{
   this.name = PieceCodes.rook
   if (color == 'white'){
     this.imgSrc = '/assets/w_rook.svg'
+    this.color = PieceCodes.white
   }
   else if (color == 'black'){
     this.imgSrc = '/assets/b_rook.svg'
+    this.color = PieceCodes.black
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
-  this.color = color
  }
 }
 
@@ -77,13 +81,14 @@ class Queen{
   this.name = PieceCodes.queen
   if (color == 'white'){
     this.imgSrc = '/assets/w_queen.svg'
+    this.color = PieceCodes.white
   }
   else if (color == 'black'){
     this.imgSrc = '/assets/b_queen.svg'
+    this.color = PieceCodes.black
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
-  this.color = color
  }
 }
 
@@ -92,12 +97,13 @@ class King{
   this.name = PieceCodes.king
   if (color == 'white'){
     this.imgSrc = '/assets/w_king.svg'
+    this.color = PieceCodes.white
   }
     if (color == 'black'){
     this.imgSrc = '/assets/b_king.svg'
+    this.color = PieceCodes.black
   }
   this.İmage = new Image()
   this.İmage.src = this.imgSrc
-  this.color = color
  }
 }
